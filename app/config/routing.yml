@@ -1,0 +1,9 @@
+level_app:
+    resource: "@LevelAppBundle/Resources/config/routing.yml"
+    prefix:   /
+
+#fos_js_routing_js:
+#    path: /admin/js/routing.{_format}
+#    defaults: { _controller: fos_js_routing.controller:indexAction, _format: js }
+#    requirements:
+#        _format: js|json

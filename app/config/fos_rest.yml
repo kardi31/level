@@ -1,0 +1,12 @@
+fos_rest:
+   view:
+      formats:
+         html: false
+         json: true
+      mime_types:
+         json: ['application/json; charset=UTF-8']
+   body_listener:
+      decoders:
+         json: fos_rest.decoder.json
+   routing_loader:
+      default_format: json

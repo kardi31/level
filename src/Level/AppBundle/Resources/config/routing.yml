@@ -1,0 +1,15 @@
+level_app_homepage:
+    path:     /
+    defaults: { _controller: LevelAppBundle:Default:index }
+
+level_app_api_calculate:
+    path:     /calculate/{number1}/{number2}/{operand}
+    defaults:
+        _controller: LevelAppBundle:Api:Calculate
+        _format: json
+    requirements:
+        number1: '\d+'
+        number2: '\d+'
+        operand: 'add|div|mul|sub'
+    options:
+        expose: true
